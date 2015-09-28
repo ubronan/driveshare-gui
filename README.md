@@ -108,11 +108,27 @@ It will start the packaging process for operating system you are running this co
 
 You can create Windows installer only when running on Windows, the same is true for Linux and OSX. So to generate all three installers you need all three operating systems.
 
+# Install windows
+
+After download the primary installer, the program will get the needed actual program parts.
+This will take a short time (If the program does not continue downloading these parts for more than 2 minutes restart the installer) 
+When succesfull the program opens the preferences page where you need to set the all important information to continue:
+1) The counterwallet bitcoin address for the payout of your sjcx and holding the funds for optional donations.
+2) Directory where you are going to save the data files (shards) needed for Storj.
+3) The amount in G(iB)/GB and T(iB)/TB "officially iB = 1000 and B = 1024", Example for 10 GiB =  10.0G
+4) Finish this by pushing the save (you can make changes anytime in preferences again.
 
 ## Special precautions for Windows
 As installer [NSIS](http://nsis.sourceforge.net/Main_Page) is used. You have to install it (version 3.0), and add NSIS folder to PATH in Environment Variables, so it is reachable to scripts in this project (path should look something like `C:/Program Files (x86)/NSIS`).
 
+## Freqeuntly Asked Questions
 
+# Windows
+
+1) Q: Install program does not continue after start and seems to hangup.  
+   A: Close the program and start it again, if it still does not continue please report this as a issue here at github
+   
+   
 # License
 
 The MIT License (MIT)
